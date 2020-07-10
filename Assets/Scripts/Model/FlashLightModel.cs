@@ -55,6 +55,17 @@ namespace FirstShuter
             transform.rotation = Quaternion.Lerp(transform.rotation,
                 _goFollow.rotation, _speed * Time.deltaTime);
         }
+
+        public bool BatteryRecharge()
+        {
+            if (BatteryChargeCurrent < _batteryChargeMax)
+            {
+                BatteryChargeCurrent += Time.deltaTime;
+
+                return true;
+            }
+            return false;
+        }
         
         public bool EditBatteryCharge()
         {
@@ -81,14 +92,6 @@ namespace FirstShuter
             return BatteryChargeCurrent <= _batteryChargeMax / 2.0f;
         }
 
-        public bool BatteryRecharge()
-        {
-            if (BatteryChargeCurrent < _batteryChargeMax)
-            {
-                BatteryChargeCurrent += Time.deltaTime;
-                return true;
-            }
-            return false;
-        }
+
     }
 }
