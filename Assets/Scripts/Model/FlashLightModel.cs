@@ -91,7 +91,5 @@ namespace FirstShuter
         {
             return BatteryChargeCurrent <= _batteryChargeMax / 2.0f;
         }
-
-
     }
 }

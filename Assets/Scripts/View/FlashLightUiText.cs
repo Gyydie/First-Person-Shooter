@@ -19,7 +19,7 @@ namespace FirstShuter
 
 		public void SetActive(bool value)
 		{
-			_text.gameObject.SetActive(true);
+			_text.gameObject.SetActive(value);
 		}
 	}
 }
