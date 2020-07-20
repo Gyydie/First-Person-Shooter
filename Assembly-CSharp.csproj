@@ -86,6 +86,7 @@
     <Compile Include="Assets\Scripts\Interface\IMotor.cs" />
     <Compile Include="Assets\Scripts\Interface\ISelectObj.cs" />
     <Compile Include="Assets\Scripts\Manager\TagManager.cs" />
+    <Compile Include="Assets\Scripts\Model\Ai\Bot.cs" />
     <Compile Include="Assets\Scripts\Model\Aim.cs" />
     <Compile Include="Assets\Scripts\Model\Ammunition.cs" />
     <Compile Include="Assets\Scripts\Model\BaseObjectScene.cs" />

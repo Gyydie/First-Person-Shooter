@@ -8,7 +8,7 @@ namespace FirstShuter
     {
         [SerializeField] private float _speed = 11.0f;
         [SerializeField] private float _batteryChargeMax;
-        [SerializeField] private float _intensity = 1.5f;
+        [SerializeField] private float _intensity = 5f;
         private Light _light;
         private Transform _goFollow;
         private Vector3 _vecOffset;
@@ -60,8 +60,8 @@ namespace FirstShuter
         {
             if (BatteryChargeCurrent < _batteryChargeMax)
             {
-                BatteryChargeCurrent += Time.deltaTime;
-
+                BatteryChargeCurrent = _batteryChargeMax;
+                _light.intensity = _intensity;
                 return true;
             }
             return false;
@@ -83,7 +83,6 @@ namespace FirstShuter
                 }
                 return true;
             }
-
             return false;
         }
 

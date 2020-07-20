@@ -14,7 +14,7 @@
             if (IsActive) return;
             if (flashLight.Length > 0) _flashLightModel = flashLight[0] as FlashLightModel;
             if (_flashLightModel == null) return;
-            if (_flashLightModel.BatteryChargeCurrent <= 0) _flashLightModel.BatteryRecharge();
+            if (_flashLightModel.BatteryChargeCurrent <= 0) return;
             base.On(_flashLightModel);
             _flashLightModel.Switch(FlashLightActiveType.On);
             UiInterface.LightUiText.SetActive(true);
@@ -26,6 +26,7 @@
             base.Off();
             _flashLightModel.Switch(FlashLightActiveType.Off);
             UiInterface.LightUiText.SetActive(false);
+            if (_flashLightModel.BatteryRecharge()) return;
         }
 
         public void Execute()
