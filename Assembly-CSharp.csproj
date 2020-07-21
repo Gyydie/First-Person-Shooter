@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Scripts\Controller\BaseController.cs" />
+    <Compile Include="Assets\Scripts\Controller\BotController.cs" />
     <Compile Include="Assets\Scripts\Controller\Controllers.cs" />
     <Compile Include="Assets\Scripts\Controller\FlashLightController.cs" />
     <Compile Include="Assets\Scripts\Controller\GameController.cs" />
@@ -78,15 +79,22 @@
     <Compile Include="Assets\Scripts\Enums\AmmunitionType.cs" />
     <Compile Include="Assets\Scripts\Enums\FlashLightActiveType.cs" />
     <Compile Include="Assets\Scripts\Enums\MouseButton.cs" />
+    <Compile Include="Assets\Scripts\Enums\StateBot.cs" />
+    <Compile Include="Assets\Scripts\Helper\BulletProjector.cs" />
     <Compile Include="Assets\Scripts\Helper\CustumDebug.cs" />
     <Compile Include="Assets\Scripts\Helper\InfoCollision.cs" />
+    <Compile Include="Assets\Scripts\Helper\Reference.cs" />
     <Compile Include="Assets\Scripts\Interface\ICollision.cs" />
     <Compile Include="Assets\Scripts\Interface\IExecute.cs" />
     <Compile Include="Assets\Scripts\Interface\IInitialization.cs" />
     <Compile Include="Assets\Scripts\Interface\IMotor.cs" />
     <Compile Include="Assets\Scripts\Interface\ISelectObj.cs" />
     <Compile Include="Assets\Scripts\Manager\TagManager.cs" />
+    <Compile Include="Assets\Scripts\Model\Ai\BodyBot.cs" />
     <Compile Include="Assets\Scripts\Model\Ai\Bot.cs" />
+    <Compile Include="Assets\Scripts\Model\Ai\HeadBot.cs" />
+    <Compile Include="Assets\Scripts\Model\Ai\Patrol.cs" />
+    <Compile Include="Assets\Scripts\Model\Ai\Vision.cs" />
     <Compile Include="Assets\Scripts\Model\Aim.cs" />
     <Compile Include="Assets\Scripts\Model\Ammunition.cs" />
     <Compile Include="Assets\Scripts\Model\BaseObjectScene.cs" />

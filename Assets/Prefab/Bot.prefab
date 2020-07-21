@@ -158,8 +158,8 @@ GameObject:
   - component: {fileID: 5133143553025674184}
   - component: {fileID: 5431885428667305428}
   - component: {fileID: 4886257092529014456}
-  - component: {fileID: 4610607387329660417}
   - component: {fileID: 4747817453825760653}
+  - component: {fileID: 2643233828970172596}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Untagged
@@ -266,25 +266,6 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4610607387329660417
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6138752606667865405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f27d2c6771d092e42859f60c554037b1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Rigidbody: {fileID: 0}
-  Transform: {fileID: 0}
-  Hp: 100
-  Vision:
-    ActiveDis: 10
-    ActiveAng: 35
-  Weapon: {fileID: 2443827103268533189}
 --- !u!114 &4747817453825760653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -297,8 +278,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b8be64c50d7438408846efd0c073a2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2643233828970172596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6138752606667865405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2175d8a728700594d98e123f5c5f642d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   Rigidbody: {fileID: 0}
   Transform: {fileID: 0}
+  Hp: 100
+  Vision:
+    ActiveDis: 10
+    ActiveAng: 35
+  Weapon: {fileID: 2443827103268533189}
 --- !u!1 &7227790147927351016
 GameObject:
   m_ObjectHideFlags: 0
@@ -405,5 +403,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e948b93b20c350b4a933919236e58ea2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Rigidbody: {fileID: 0}
-  Transform: {fileID: 0}

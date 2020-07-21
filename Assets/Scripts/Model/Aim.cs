@@ -15,7 +15,7 @@ namespace FirstShuter
         [SerializeField] private float _maxAbsorbedDamage = 10f;
         private float _absorbedDamage;
 
-        public void CollisionEnter(InfoCollision info)
+        public void OnCollision(InfoCollision info)
         {
             if (_isDead) return;
             _absorbedDamage = UnityEngine.Random.Range(_minAbsorbedDamage, _maxAbsorbedDamage);
