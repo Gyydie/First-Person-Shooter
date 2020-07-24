@@ -111,6 +111,11 @@
     <Compile Include="Assets\Scripts\Model\Weapon.cs" />
     <Compile Include="Assets\Scripts\ServiceLocator\ServiceLocator.cs" />
     <Compile Include="Assets\Scripts\ServiceLocator\ServiceLocatorMonoBehaviour.cs" />
+    <Compile Include="Assets\Scripts\Test\MeScript.cs" />
+    <Compile Include="Assets\Scripts\Test\MenuItems.cs" />
+    <Compile Include="Assets\Scripts\Test\MyScriptЕditor.cs" />
+    <Compile Include="Assets\Scripts\Test\MyWindow.cs" />
+    <Compile Include="Assets\Scripts\Test\UniqueNames.cs" />
     <Compile Include="Assets\Scripts\View\AimUiText.cs" />
     <Compile Include="Assets\Scripts\View\FlashLightUiBar.cs" />
     <Compile Include="Assets\Scripts\View\FlashLightUiText.cs" />
