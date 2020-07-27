@@ -2,11 +2,16 @@
 
 namespace FirstShuter
 {
-    public sealed class InputController : BaseController, IExecute
+    public sealed class InputController : BaseController, IExecute, IOnUpdate
     {
         private KeyCode _activeFlashLight = KeyCode.F;
-        private KeyCode _cancel = KeyCode.Escape;
+        private KeyCode _cancel     = KeyCode.Escape;
         private KeyCode _reloadClip = KeyCode.R;
+
+        private KeyCode _savePlayer = KeyCode.C;
+        private KeyCode _loadPlayer = KeyCode.V;
+        private KeyCode _screenshot = KeyCode.Q;
+
         private int _mouseButton = (int)MouseButton.LeftButton;
 
         public InputController()
@@ -14,14 +19,35 @@ namespace FirstShuter
             Cursor.lockState = CursorLockMode.Locked;
         }
 
+
+        public void OnUpdate()
+        {
+            if (!IsActive) return;
+
+            if (Input.GetKeyDown(_savePlayer))
+            {
+                Main.Instance.SaveDataRepository.Save();
+            }
+
+            if (Input.GetKeyDown(_loadPlayer))
+            {
+                Main.Instance.SaveDataRepository.Load();
+            }
+
+            //if (Input.GetKeyDown(_screenshot))
+            //{
+            //    Main.Instance.PhotoController.SecondMethod();
+            //}
+        }
+
+
         public void Execute()
         {
             if (!IsActive) return;
             if (Input.GetKeyDown(_activeFlashLight))
             {
-                ServiceLocator.Resolve<FlashLightController>().Switch(ServiceLocator.Resolve<Inventory>().FlashLight);
+                //ServiceLocator.Resolve<FlashLightController>().Switch(ServiceLocator.Resolve<Inventory>().FlashLight);
             }
-            //todo реализовать выбор оружия по колесику мыши
 
             float ChoiceOfWeapon = Input.GetAxis("Mouse ScrollWheel");
 

@@ -30,9 +30,10 @@ namespace FirstShuter.Editor
                     }
                 }
             }
-            _nameDictionary.Clear(); 
+            _nameDictionary.Clear();
+        }
 
-        static void DataCollection(GameObject sceneObj)
+        private static void DataCollection(GameObject sceneObj)
         {
             string[] tempName = sceneObj.name.Split('(');
             tempName[0] = tempName[0].Trim();

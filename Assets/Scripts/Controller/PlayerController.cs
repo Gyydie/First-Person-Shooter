@@ -1,6 +1,6 @@
 ﻿namespace FirstShuter
 {
-    public sealed class PlayerController : BaseController, IExecute
+    public sealed class PlayerController : BaseController, IOnUpdate
     {
         private readonly IMotor _motor;
 
@@ -9,7 +9,7 @@
             _motor = motor;
         }
 
-        public void Execute()
+        public void OnUpdate()
         {
             if (!IsActive) return;
             _motor.Move();

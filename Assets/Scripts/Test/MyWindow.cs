@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 using UnityEditor;
-using Random = UnityEngine.Random;+
+using Random = UnityEngine.Random;
 
 namespace FirstShuter.Editor
 {

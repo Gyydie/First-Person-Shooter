@@ -5,7 +5,7 @@ using FirstShuter;
 namespace FirstShuter.Editor
 {
     [CustomEditor(typeof(MyScript))]
-    public class MyScriptЕditor : Editor
+    public class MyScriptЕditor : UnityEditor.Editor
     {
         bool _isPressButtonOk;
         public override void OnInspectorGUI()

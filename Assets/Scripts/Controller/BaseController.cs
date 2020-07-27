@@ -25,11 +25,11 @@
             IsActive = false;
         }
 
-        public void Switch(params BaseObjectScene[] obj)
+        public void Switch()
         {
             if (!IsActive)
             {
-                On(obj);
+                On();
             }
             else
             {
