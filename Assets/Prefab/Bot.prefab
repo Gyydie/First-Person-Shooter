@@ -158,8 +158,8 @@ GameObject:
   - component: {fileID: 5133143553025674184}
   - component: {fileID: 5431885428667305428}
   - component: {fileID: 4886257092529014456}
+  - component: {fileID: 1968083714464742861}
   - component: {fileID: 4747817453825760653}
-  - component: {fileID: 2643233828970172596}
   m_Layer: 0
   m_Name: Bot
   m_TagString: Untagged
@@ -266,19 +266,7 @@ NavMeshAgent:
   m_BaseOffset: 1
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &4747817453825760653
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6138752606667865405}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b8be64c50d7438408846efd0c073a2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2643233828970172596
+--- !u!114 &1968083714464742861
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -296,7 +284,19 @@ MonoBehaviour:
   Vision:
     ActiveDis: 10
     ActiveAng: 35
-  Weapon: {fileID: 2443827103268533189}
+  Weapon: {fileID: 0}
+--- !u!114 &4747817453825760653
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6138752606667865405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9b8be64c50d7438408846efd0c073a2a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7227790147927351016
 GameObject:
   m_ObjectHideFlags: 0

@@ -25,7 +25,7 @@ namespace FirstShuter
 
             _executeControllers[0] = ServiceLocator.Resolve<TimeRemainingController>();
 
-            //_executeControllers[1] = ServiceLocator.Resolve<PlayerController>();
+            _executeControllers[1] = ServiceLocator.Resolve<PlayerController>();
 
             _executeControllers[2] = ServiceLocator.Resolve<FlashLightController>();
 
@@ -53,6 +53,7 @@ namespace FirstShuter
             ServiceLocator.Resolve<SelectionController>().On();
             ServiceLocator.Resolve<PlayerController>().On();
             ServiceLocator.Resolve<BotController>().On();
+            ServiceLocator.Resolve<FlashLightController>().On();
         }
     }
 }

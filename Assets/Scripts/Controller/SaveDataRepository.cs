@@ -33,7 +33,7 @@ namespace FirstShuter
 			var player = new SerializableGameObject
 			{
 				Pos = Main.Instance.Player.position,
-				Name = "Roman",
+				Name = "Denis",
 				IsEnable = true
 			};
 

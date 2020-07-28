@@ -129,8 +129,8 @@
     <Compile Include="Assets\Scripts\SaveData\XMLData.cs" />
     <Compile Include="Assets\Scripts\ServiceLocator\ServiceLocator.cs" />
     <Compile Include="Assets\Scripts\ServiceLocator\ServiceLocatorMonoBehaviour.cs" />
-    <Compile Include="Assets\Scripts\Test\MeScript.cs" />
     <Compile Include="Assets\Scripts\Test\MenuItems.cs" />
+    <Compile Include="Assets\Scripts\Test\MyScript.cs" />
     <Compile Include="Assets\Scripts\Test\MyScriptЕditor.cs" />
     <Compile Include="Assets\Scripts\Test\MyWindow.cs" />
     <Compile Include="Assets\Scripts\Test\UniqueNames.cs" />

@@ -6,7 +6,7 @@
 
         public void Initialization()
         {
-            UiInterface.LightUiText.SetActive(false);
+            //UiInterface.LightUiText.SetActive(false);
         }
 
         public override void On(params BaseObjectScene[] flashLight)

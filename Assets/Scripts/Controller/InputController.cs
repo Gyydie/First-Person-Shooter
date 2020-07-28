@@ -46,7 +46,7 @@ namespace FirstShuter
             if (!IsActive) return;
             if (Input.GetKeyDown(_activeFlashLight))
             {
-                //ServiceLocator.Resolve<FlashLightController>().Switch(ServiceLocator.Resolve<Inventory>().FlashLight);
+                ServiceLocator.Resolve<FlashLightController>().Switch(ServiceLocator.Resolve<Inventory>().FlashLight);
             }
 
             float ChoiceOfWeapon = Input.GetAxis("Mouse ScrollWheel");
